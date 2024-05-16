@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+
+:root {
+    /* BACKGROUND COLORS */
+    --main-bg-color: #523523;
+    --secondary-bg-color: rgb(20, 20, 20);
+    /* NAVBAR COLORS*/
+    --navbar-color: #24170f;
+    --navbar-toggler: #523523;
+    --navbar-toggler-border: #ffffff;
+    --navbar-toggler-border-active: #925f3f;
+    --navbar-link: #858282;
+    /* FOOTER BACKGROUND COLOR*/
+    --footer-bg-color: #24170f;
+    /* BORDER COLORS*/
+    --border-color: rgb(63, 47, 47);
+    /* FONT */
+    --font-color: white;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    justify-content: center;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: var(--footer-bg-color);
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+#footer-id{
+    background-color: var(--footer-bg-color)!important;
+}
+
+/* NAVBAR */
+
+nav{
+    background-color: var(--navbar-color);
+}
+
+.navbar-toggler{
+    background-color: var(--navbar-toggler);
+    border: 1px groove var(--navbar-toggler-border);
+    margin-bottom: 5px;
+}
+
+.navbar-toggler:active{
+    transform: scale(1.1);
+    background-color: var(--navbar-toggler-border-active);
+}
+
+.nav-link{
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.nav-link:active{
+    background-color: var(--navbar-toggler-border-active);
+}
+/* FIN NAVBAR */
+
+
+
+#logo-main {
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+}
+
+.slider {
+    align-items: center;
+    font-family: sans-serif;
+    overflow: hidden;
+    width: cover;
+}
+
+.slider--inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: all 0.5s ease-in;
+    align-items: center;
+    
+}
+
+
+.slider--inner .imgC {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.imgC {
+    width: 100%;
+    height: 20%;
+
+}
+
+@media (max-width: 575px) { 
+    /* NAVBAR */
+    .navbar-toggler{
+        background-color: var(--navbar-toggler);
+        border: 1px groove var(--navbar-toggler-border);
+        margin-bottom: 5px;
+    }
+    
+    .navbar-toggler:active{
+        transform: scale(1.1);
+        background-color: var(--navbar-toggler-border-active);;
+    }
+
+    .navbar-toggler:active{
+        transform: scale(1.1);
+        background-color: var(--navbar-toggler-border-active);
+    }
+    
+    .nav-link{
+        padding: 5px;
+        border: 3px groove var(--navbar-link);
+        background-color: var(--navbar-toggler);
+    }
+    
+    .nav-link:active{
+        transform: scale(1.1);
+        background-color: var(--navbar-toggler-border-active);
+    }
+    /* FIN NAVBAR */
+
+}
+
+/*
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+/* FORMULARIO DE CONTACTO */
+
+#mensaje {
+    resize: none;
+}
+
+#principal{
+    background-image: url("img/restaurante.png");
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    background-repeat: no-repeat;
+}
+
+#formulario{
+    border-color: rgb(63, 47, 47);
+    border-style: solid;
+    margin-top: 5%;
+    background-color: rgb(36, 26, 15,0.8);
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 40%;
+    
+}
