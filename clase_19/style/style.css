@@ -46,4 +46,33 @@ footer{
     border: 2px solid black;
     text-align: center;
     padding: 5px;
+    border-radius: 10px;
+}
+
+.alive{
+    width: 8px;
+    height: 8px;
+    background-color: green;
+    border-radius: 50%;
+    display: block;
+}
+
+.dead{
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+    display: block;
+}
+
+.dead{
+    width: 8px;
+    height: 8px;
+    background-color: gray;
+    border-radius: 50%;
+    display: block;
+}
+
+a{
+    color: orange;
 }

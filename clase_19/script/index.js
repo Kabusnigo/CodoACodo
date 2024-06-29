@@ -36,7 +36,7 @@ let getCharacters = async () => {
             <h2> ${character.name} </h2>
             <div>
                 <p> ${character.species} </p>
-                <p> ${character.status} </p>
+                <p> <span class="${character.status.toLowerCase()}"> </span> </p>
             </div>
             <a href=""> Ver personaje </a>
         `;
